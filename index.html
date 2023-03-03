@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+    </style>
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-primary text-light container">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/"
+          ><img src="./img/vatan.png" alt="vatan" height="70"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarTogglerDemo02"
+          aria-controls="navbarTogglerDemo02"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link text-light"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="fa-solid fa-bars"></i>
+                Kategoriler
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="#">Something else here</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+          <style>
+            input::-webkit-input-placeholder,
+            ::placeholder {
+              color: white;
+            }
+          </style>
+          <form class="d-flex flex-grow-1 mx-0 mx-md-4" role="search">
+            <input
+              class="search form-control me-2 opacity-25 text-light placeholder-xs text-black"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+          </form>
+          <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item mx-4">
+                Üyelik
+                <i
+                  class="fa-regular fa-user text-bg-light rounded-circle p-1"
+                ></i>
+              </li>
+
+              <li class="nav-item mx-4 dropdown">
+                <a
+                  type="button"
+                  class="position-relative text-decoration-none text-light"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Sepetim
+                  <i
+                    class="fa-solid fa-cart-shopping text-bg-light rounded-circle p-1"
+                  ></i>
+                </a>
+                <span
+                  class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger"
+                >
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Another action</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Carousel Start -->
+    <div
+      id="carouselExampleDark"
+      class="carousel slide container bg-primary p-4"
+    >
+      <div class="carousel-indicators">
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="0"
+          class="active"
+          aria-current="true"
+          aria-label="Slide 1"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="1"
+          aria-label="Slide 2"
+        ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="2"
+          aria-label="Slide 3"
+        ></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+          <img
+            src="https://picsum.photos/id/684/500/200"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img
+            src="https://picsum.photos/id/685/500/200"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://picsum.photos/id/683/500/200"
+            class="d-block w-100"
+            alt="..."
+          />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleDark"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!-- Carousel End -->
+
+    <!-- Highlight Start -->
+
+    <div class="card-group bg-light container">
+      <div
+        class="fw-bold w-100 py-3 d-flex flex-row align-items-center justify-content-between"
+      >
+        <div class="text-body">Öne Çıkan Ürünler</div>
+        <div class="text-primary" style="font-size: 11px">
+          TÜM ÖNE ÇIKANLAR <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+      <div
+        class="card-parent row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5"
+      >
+        <!-- <div class="card px-0 overflow-hidden">
+          <div>
+            <img
+              src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/113144-1-3_large.jpg"
+              class="card-img-top"
+              alt="device"
+            />
+            <div class="card-body text-center p-0">
+              <div class="text-warning pb-2" style="font-size: 13px">
+                <i class="fa-solid fa-star"></i>4.6<span class="text-dark">
+                  (122 Yorum)</span
+                >
+              </div>
+              <div style="font-size: 11px">PA2N0006TR</div>
+              <h6 class="card-title">iPhone 11 64 Gb Akıllı Telefon Beyaz</h6>
+
+              <div class="card-text fs-4 fw-bold text-primary">₺ 15.999</div>
+            </div>
+            <div class="add text-center p-2">
+              <div class="my-2">
+                <span
+                  class="cargo bg-body-secondary rounded-1 p-2 shadow-sm"
+                  style="font-size: 12px"
+                  >BUGÜN KARGODA</span
+                >
+              </div>
+            </div>
+          </div>
+        </div> -->
+        <!--<div type="button" class="d-none ekle d-flex bg-primary text-light">
+            <div class="bg-info p-3">
+              <i class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <div
+              class="sepet d-flex align-items-center justify-content-center flex-fill"
+            >
+              <div>SEPETE EKLE</div>
+            </div>
+          </div>
+        </div> -->
+
+        <!--<div class="card px-0 overflow-hidden">
+            <img
+              src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/113144-1-3_large.jpg"
+              class="card-img-top"
+              alt="device"
+            />
+            <div class="card-body text-center">
+              <div class="text-warning pb-2" style="font-size: 13px">
+                <i class="fa-solid fa-star"></i>4.6<span class="text-dark">
+                  (122 Yorum)</span
+                >
+              </div>
+              <div style="font-size: 11px">PA2N0006TR</div>
+              <h6 class="card-title">iPhone 11 64 Gb Akıllı Telefon Beyaz</h6>
+
+              <div class="card-text fs-4 fw-bold text-primary">₺ 15.999</div>
+
+              <div></div>
+              <div class="mt-2 cargo ">
+                <span
+                  class=" bg-body-secondary rounded-1 p-2 shadow-sm"
+                  style="font-size: 12px"
+                  >BUGÜN KARGODA</span
+                >
+              </div>
+            </div>
+              <div type="button" class=" ekle  d-flex bg-primary text-light ">
+                <div class="bg-info p-3"><i class="fa-solid fa-arrow-right-arrow-left"></i></div>
+                <div class="ps-1 bg-primary d-flex justify-content-center">
+                <div class="sepet d-flex align-items-center justify-content-center flex-fill ">
+                  <div>SEPETE EKLE</div>
+                </div>
+                </div> 
+              </div>
+        </div> -->
+
+        <!-- <div class="card px-0">
+            <img
+              src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/113144-1-3_large.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <div class="text-warning pb-2" style="font-size: 13px">
+                <i class="fa-solid fa-star"></i>4.6<span class="text-dark">
+                  (122 Yorum)</span
+                >
+              </div>
+              <div style="font-size: 11px">PA2N0006TR</div>
+              <h6 class="card-title">iPhone 11 64 Gb Akıllı Telefon Beyaz</h6>
+
+              <div class="card-text fs-4 fw-bold text-primary">₺ 15.999</div>
+
+              <div class="mt-2">
+                <span
+                  class="cargo bg-body-secondary rounded-1 p-2 shadow-sm"
+                  style="font-size: 12px"
+                  >BUGÜN KARGODA</span
+                >
+              </div>
+            </div>
+          </div>
+
+        <div class="card px-0">
+            <img
+              src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/113144-1-3_large.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <div class="text-warning pb-2" style="font-size: 13px">
+                <i class="fa-solid fa-star"></i>4.6<span class="text-dark">
+                  (122 Yorum)</span
+                >
+              </div>
+              <div style="font-size: 11px">PA2N0006TR</div>
+              <h6 class="card-title">iPhone 11 64 Gb Akıllı Telefon Beyaz</h6>
+
+              <div class="card-text fs-4 fw-bold text-primary">₺ 15.999</div>
+
+              <div class="mt-2">
+                <span
+                  class="cargo bg-body-secondary rounded-1 p-2 shadow-sm"
+                  style="font-size: 12px"
+                  >BUGÜN KARGODA</span
+                >
+              </div>
+            </div>
+          </div>
+         
+        <div class="card px-0">
+            <img
+              src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/113144-1-3_large.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <div class="text-warning pb-2" style="font-size: 13px">
+                <i class="fa-solid fa-star"></i>4.6<span class="text-dark">
+                  (122 Yorum)</span
+                >
+              </div>
+              <div style="font-size: 11px">PA2N0006TR</div>
+              <h6 class="card-title">iPhone 11 64 Gb Akıllı Telefon Beyaz</h6>
+
+              <div class="card-text fs-4 fw-bold text-primary">₺ 15.999</div>
+
+              <div class="mt-2">
+                <span
+                  class="cargo bg-body-secondary rounded-1 p-2 shadow-sm"
+                  style="font-size: 12px"
+                  >BUGÜN KARGODA</span
+                >
+              </div>
+            </div>
+          </div>
+        <div class="card px-0">
+            <img
+              src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/113144-1-3_large.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <div class="text-warning pb-2" style="font-size: 13px">
+                <i class="fa-solid fa-star"></i>4.6<span class="text-dark">
+                  (122 Yorum)</span
+                >
+              </div>
+              <div style="font-size: 11px">PA2N0006TR</div>
+              <h6 class="card-title">iPhone 11 64 Gb Akıllı Telefon Beyaz</h6>
+
+              <div class="card-text fs-4 fw-bold text-primary">₺ 15.999</div>
+
+              <div class="mt-2">
+                <span
+                  class="cargo bg-body-secondary rounded-1 p-2 shadow-sm"
+                  style="font-size: 12px"
+                  >BUGÜN KARGODA</span
+                >
+              </div>
+            </div>
+          </div>
+         
+        <div class="card px-0">
+            <img
+              src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/113144-1-3_large.jpg"
+              class="card-img-top"
+              alt="..."
+            />
+            <div class="card-body text-center">
+              <div class="text-warning pb-2" style="font-size: 13px">
+                <i class="fa-solid fa-star"></i>4.6<span class="text-dark">
+                  (122 Yorum)</span
+                >
+              </div>
+              <div style="font-size: 11px">PA2N0006TR</div>
+              <h6 class="card-title">iPhone 11 64 Gb Akıllı Telefon Beyaz</h6>
+
+              <div class="card-text fs-4 fw-bold text-primary">₺ 15.999</div>
+
+              <div class="mt-2">
+                <span
+                  class="cargo bg-body-secondary rounded-1 p-2 shadow-sm"
+                  style="font-size: 12px"
+                  >BUGÜN KARGODA</span
+                >
+              </div>
+            </div>
+          </div> -->
+
+        <!-- </div> -->
+      </div>
+    </div>
+    <!-- Highlight End -->
+
+    <!-- Most Sales Start -->
+    <div class="card-group bg-light container">
+      <div
+        class="fw-bold w-100 py-3 d-flex flex-row align-items-center justify-content-between"
+      >
+        <div class="text-body">Çok Satanlar</div>
+        <div class="text-primary" style="font-size: 11px">
+          TÜM ÇOK SATANLAR <i class="fa-solid fa-arrow-right"></i>
+        </div>
+      </div>
+    </div>
+    <!-- Most Sales End -->
+
+    <style>
+      .footer {
+        font-size: 10px;
+        padding: 3px 0 3px;
+      }
+      .footer-title {
+        font-size: 11px;
+        font-weight: bold;
+      }
+    </style>
+    <!-- Footer Start -->
+    <div class="container">
+      <div class="text-secondary row row-cols-12">
+        <div class="col ps-sm-4">
+          <div class="row footer-title p-1">KURUMSAL</div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 px-1">
+              <div class="footer">Hakkımızda</div>
+              <div class="footer">Müşteri Hizmetleri</div>
+              <div class="footer">Sipariş Aşamaları</div>
+              <div class="footer">Sıkça Sorulan Sorular</div>
+              <div class="footer">İnsan Kaynakları</div>
+              <div class="footer">Gizlilik Politikamız</div>
+            </div>
+            <div class="col-12 col-md-6 px-1">
+              <div class="footer">İletişim</div>
+              <div class="footer">Vatan Card</div>
+              <div class="footer">Servis Takip Formu</div>
+              <div class="footer">Mağazalar</div>
+              <div class="footer">İşlem Rehberi</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="row footer-title p-1">KATEGORİLER</div>
+
+          <div class="row">
+            <div class="col-12 col-md-6 px-1">
+              <div class="footer">Bilgisayar</div>
+              <div class="footer">Cep Telefonu</div>
+              <div class="footer">Tablet PC</div>
+              <div class="footer">Akıllı Saat</div>
+              <div class="footer">Vestel TV</div>
+              <div class="footer">Oyun Bilgisayarı</div>
+            </div>
+            <div class="col-12 col-md-6 px-1">
+              <div class="footer">Küçük Ev Aletleri</div>
+              <div class="footer">Kişisel Bakım Ürünleri</div>
+              <div class="footer">Elektrikli Süpürge</div>
+              <div class="footer">Ütü</div>
+              <div class="footer">Masaüstü Bilgisayar</div>
+              <div class="footer">Sabit Diskler</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-3 col-md-2">
+          <div class="row footer-title p-1">ÖZEL ÜRÜNLER</div>
+          <div class="row">
+            <div class="col px-1">
+              <div class="footer">İPhone 7</div>
+              <div class="footer">İPhone 6S</div>
+              <div class="footer">İPhone 5S</div>
+              <div class="footer">İPhone SE</div>
+              <div class="footer">General Mobile 5 Plus</div>
+              <div class="footer">Galaxy S7</div>
+              <div class="footer">Note 5</div>
+              <div class="footer">Galaxy S6</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="text-secondary d-flex justify-content-center mb-3">
+      <div class="container d-flex justify-content-between row">
+        <div class="col-12 col-sm-6">
+          <div class="fw-bold" style="font-size: 12px">
+            Türkiyenin Teknoloji Hiperstoru
+          </div>
+          <div style="font-size: 12px">
+            Copyright Vatan Bilgisayar San. Tic. Ltd. Şti.
+          </div>
+        </div>
+        <div
+          class="col-12 col-sm-6 d-flex justify-content-end align-items-center"
+        >
+          <img
+            src="https://www.vatanbilgisayar.com/upload/general/taksit-footer/payment-types.jpg"
+            alt="payment"
+            class="w-100"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- Footer End -->
+
+    <script src="./app.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
