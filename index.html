@@ -58,8 +58,14 @@
                 Kategoriler
               </a>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Öne Çıkan Ürünler</a></li>
-                <li><a class="dropdown-item" href="#">Çok Satanlar</a></li>
+                <li>
+                  <a class="dropdown-item" href="#onecikan"
+                    >Öne Çıkan Ürünler</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="#coksatan">Çok Satanlar</a>
+                </li>
               </ul>
             </li>
           </ul>
@@ -105,14 +111,7 @@
                 </a>
 
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Another action</a>
-                  </li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
+                  <li><a class="dropdown-item" href="#">Cart</a></li>
                 </ul>
               </li>
             </ul>
@@ -125,7 +124,7 @@
     <!-- Carousel Start -->
     <div
       id="carouselExampleDark"
-      class="carousel slide container bg-primary p-4"
+      class="carousel slide container carousel-dark bg-primary p-4"
     >
       <div class="carousel-indicators">
         <button
@@ -148,27 +147,40 @@
           data-bs-slide-to="2"
           aria-label="Slide 3"
         ></button>
+        <button
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide-to="3"
+          aria-label="Slide 4"
+        ></button>
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active" data-bs-interval="10000">
           <img
-            src="https://picsum.photos/id/684/500/200"
+            src="https://cdn.vatanbilgisayar.com/Upload/BANNER//yeni-tasarim/anasayfa/03-mart-23/samsung-galaxy-s22-ultra-telefon-2-03-23-ilan-web-revize.jpg"
             class="d-block w-100"
-            alt="..."
+            alt="phone"
           />
         </div>
         <div class="carousel-item" data-bs-interval="2000">
           <img
-            src="https://picsum.photos/id/685/500/200"
+            src="https://cdn.vatanbilgisayar.com/Upload/BANNER//yeni-tasarim/anasayfa/03-mart-23/macbook-air-notebook-3-03-23-ilan-web.jpg"
             class="d-block w-100"
-            alt="..."
+            alt="notebook"
           />
         </div>
         <div class="carousel-item">
           <img
-            src="https://picsum.photos/id/683/500/200"
+            src="https://cdn.vatanbilgisayar.com/Upload/BANNER//yeni-tasarim/anasayfa/03-mart-23/grundig-50GGU7900-tv-2-03-23-ilan-web.jpg"
             class="d-block w-100"
-            alt="..."
+            alt="tv"
+          />
+        </div>
+        <div class="carousel-item">
+          <img
+            src="https://cdn.vatanbilgisayar.com/Upload/BANNER//yeni-tasarim/anasayfa/02-subat-2023/xiaomi-redmi-buds-essential-kulaklik-27-02-23-ilan-web.jpg"
+            class="d-block w-100"
+            alt="headset"
           />
         </div>
       </div>
@@ -195,7 +207,7 @@
 
     <!-- Highlight Start -->
 
-    <div class="card-group bg-light container">
+    <div id="onecikan" class="card-group bg-light container">
       <div
         class="fw-bold w-100 py-3 d-flex flex-row align-items-center justify-content-between"
       >
@@ -205,43 +217,14 @@
         </div>
       </div>
       <div
-        class="card-parent row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5"
-      >
-        <!-- <div class="card px-0 overflow-hidden">
-          <div>
-            <img
-              src="https://cdn.vatanbilgisayar.com/Upload/PRODUCT/apple/thumb/113144-1-3_large.jpg"
-              class="card-img-top"
-              alt="device"
-            />
-            <div class="card-body text-center p-0">
-              <div class="text-warning pb-2" style="font-size: 13px">
-                <i class="fa-solid fa-star"></i>4.6<span class="text-dark">
-                  (122 Yorum)</span
-                >
-              </div>
-              <div style="font-size: 11px">PA2N0006TR</div>
-              <h6 class="card-title">iPhone 11 64 Gb Akıllı Telefon Beyaz</h6>
-
-              <div class="card-text fs-4 fw-bold text-primary">₺ 15.999</div>
-            </div>
-            <div class="add text-center p-2">
-              <div class="my-2">
-                <span
-                  class="cargo bg-body-secondary rounded-1 p-2 shadow-sm"
-                  style="font-size: 12px"
-                  >BUGÜN KARGODA</span
-                >
-              </div>
-            </div>
-          </div>
-        </div> -->
-      </div>
+        class="card-parent-sales row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5"
+      ></div>
     </div>
     <!-- Highlight End -->
 
     <!-- Most Sales Start -->
-    <div class="card-group bg-light container">
+
+    <div id="coksatan" class="card-group bg-light container">
       <div
         class="fw-bold w-100 py-3 d-flex flex-row align-items-center justify-content-between"
       >
@@ -250,7 +233,11 @@
           TÜM ÇOK SATANLAR <i class="fa-solid fa-arrow-right"></i>
         </div>
       </div>
+      <div
+        class="card-parent-most row row-cols-2 row-cols-sm-3 row-cols-md-4 row-cols-lg-5"
+      ></div>
     </div>
+
     <!-- Most Sales End -->
 
     <style>
@@ -264,7 +251,7 @@
       }
     </style>
     <!-- Footer Start -->
-    <div class="container">
+    <div class="container pt-3">
       <div class="text-secondary row row-cols-12">
         <div class="col ps-sm-4">
           <div class="row footer-title p-1">KURUMSAL</div>
